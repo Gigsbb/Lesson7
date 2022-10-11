@@ -6,14 +6,11 @@
     height: 100vh;
     position: relative;
     overflow-x: hidden;
-    
-    
-   
-    
+    /* background-color: black; */
 }
 
 .highway{
-    height: 220px;
+    height: 250px;
     width: 500%;
     display: block;
     background-image: url(../images/road.jpg);
@@ -21,13 +18,13 @@
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 1;
-    background-repeat: repeat-x;
     animation: highway 10s linear infinite;
+    background-repeat: repeat-x;
+    z-index: 1;
 }
 
 .highway1{
-    height:100px;
+    height:125px;
     width: 500%;
     display: block;
     background-image: url(../images/road.jpg);
@@ -38,11 +35,66 @@
     z-index: 1;
     background-repeat: repeat-x;
     animation: highway 10s linear infinite;
+    
+    
+    
+    
 }
 
  @keyframes highway {
     100%{
-        transform:translateX(-2400px);
+        transform:translateX(-2400PX);
 
     }
+}
+
+
+.truck{
+    width: 400px;
+    left: 80%;
+    bottom: 20px;
+    transform: translateX(-100%);
+    position:absolute;
+    z-index: 2;
+    top: 400px;
+    
+}
+
+.truck img{
+    width: 100%;
+    animation: truck 10s linear infinite reverse;
+
+    
+    
+}
+
+@keyframes truck{
+    100%{
+        transform: translateX(600PX);
+    }
+}
+    
+
+
+.car{
+    width: 300px;
+    left: 10%;
+    bottom: 20px;
+    transform: translateX(-100%);
+    position:absolute;
+    z-index: 2;
+    
+}
+
+.car img{
+    width: 100%;
+    animation: car 10s linear infinite;
+}
+
+
+@keyframes car{
+    100%{
+        transform: translatex(600px);
+    }
+    
 }
