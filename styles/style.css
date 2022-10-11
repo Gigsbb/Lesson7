@@ -1,0 +1,48 @@
+.background{
+    background-image: url(../images/city.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    
+    
+   
+    
+}
+
+.highway{
+    height: 220px;
+    width: 500%;
+    display: block;
+    background-image: url(../images/road.jpg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: highway 10s linear infinite;
+}
+
+.highway1{
+    height:100px;
+    width: 500%;
+    display: block;
+    background-image: url(../images/road.jpg);
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: highway 10s linear infinite;
+}
+
+ @keyframes highway {
+    100%{
+        transform:translateX(-2400px);
+
+    }
+}
